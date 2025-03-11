@@ -25,7 +25,7 @@ This repository contains my problem set and assignment solutions, along with alg
 
 ### Implementations
 - [ ] Integer Multiplication
-- [ ] Recursive Integer Multiplication
+- [x] Recursive Integer Multiplication
 
 ### Problems
 - [ ] Problem 1.1
