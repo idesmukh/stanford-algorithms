@@ -36,6 +36,8 @@ def rec_int_mult(x: int, y: int) -> int:
         int: The product of x and y.
     """
 
+    if x < 0 or y < 0:
+        raise ValueError("Inputs must be positive integers")
     if x < 10 and y < 10:
         return x * y
 
@@ -43,14 +45,15 @@ def rec_int_mult(x: int, y: int) -> int:
     digits_y = count_digits(y)
 
     n = max(digits_x, digits_y)
+    half_n = n // 2
 
     # Split x into higher order (a) and lower order (b) parts based on half its digits
-    a = x // (10**(digits_x//2))
-    b = x % (10**(digits_x//2))
+    a = x // (10**half_n)
+    b = x % (10**half_n)
 
     # Split y into higher order (c) and lower order (d) parts
-    c = y // (10**(digits_y//2))
-    d = y % (10**(digits_y//2))
+    c = y // (10**half_n)
+    d = y % (10**half_n)
 
     # Recursively compute subproducts
     ac = rec_int_mult(a, c)
@@ -68,5 +71,6 @@ def rec_int_mult(x: int, y: int) -> int:
 
 if __name__ == "__main__":
     # Verify the algorithm with a simple test case
-    assert rec_int_mult(24, 36) == 24 * 36
+    assert rec_int_mult(0, 5) == 0
+    assert rec_int_mult(99, 99) == 9801
     print("All tests passed!")
