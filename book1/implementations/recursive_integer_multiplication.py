@@ -23,14 +23,14 @@ def count_digits(number: int) -> int:
 
 
 def rec_int_mult(x: int, y: int) -> int:
-    """Multiply two positive even integers recursively using the RecIntMult algorithm.
+    """Multiply two integers recursively using the RecIntMult algorithm.
 
     This implements a divide-and-conquer approach to integer multiplication.
-    Assumes inputs are positive even integers; behavior is undefined for negative numbers.
+    Assumes input integers with even number of digits.
 
     Args:
-        x: First positive even integer
-        y: Second positive even integer
+        x: First integer
+        y: Second integer
 
     Returns:
         int: The product of x and y.
