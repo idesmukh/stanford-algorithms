@@ -1,6 +1,6 @@
 """Implements the recursive integer multiplication (RecIntMult) algorithm from Algorithms Illuminated.
 
-This module provides an efficient method for multiplying large integers using recursion.
+This module provides an efficient method for multiplying integers using recursion.
 """
 
 import math
@@ -23,10 +23,10 @@ def count_digits(number: int) -> int:
 
 
 def rec_int_mult(x: int, y: int) -> int:
-    """Multiply two integers recursively using the RecIntMult algorithm.
+    """Multiply two n-digit positive integers recursively using the RecIntMult algorithm.
 
     This implements a divide-and-conquer approach to integer multiplication.
-    Assumes input integers with even number of digits.
+    Assumes n is a power of 2 i.e. the integers have even number of digits.
 
     Args:
         x: First integer
