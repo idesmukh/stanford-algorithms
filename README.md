@@ -26,6 +26,7 @@ This repository contains my problem set and assignment solutions, along with alg
 ### Implementations
 - [ ] Integer Multiplication
 - [x] Recursive Integer Multiplication
+- [x] Karatsuba Multiplication
 
 ### Problems
 - [ ] Problem 1.1
