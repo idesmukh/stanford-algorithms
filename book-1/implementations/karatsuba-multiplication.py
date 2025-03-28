@@ -1,7 +1,7 @@
-"""Implements karatsuba multiplication (Karatsuba) algorithm from Algorithms Illuminated.
+"""Implements karatsuba multiplication (Karatsuba) algorithm.
 
-This module provides an efficient method for multiplying large integers using recursion.
-It uses three recursive calls, instead of four recursive calls as per standard recursive integer multiplication.
+Uses three recursive calls, instead of four recursive calls as per standard
+recursive integer multiplication.
 """
 
 import math
@@ -23,7 +23,7 @@ def count_digits(number: int) -> int:
     return math.floor(math.log10(abs(number))) + 1
 
 def karatsuba(x: int, y: int) -> int:
-    """Multiply two n-digit positive integers recursively using Karatsuba algorithm.
+    """Multiply two n-digit positive integers recursively.
 
     This implements a divide-and-conquer approach to integer multiplication.
     Assumes n is a power of 2 i.e. the integers have even number of digits.
@@ -48,24 +48,24 @@ def karatsuba(x: int, y: int) -> int:
     n = max(digits_x, digits_y)
     half_n = n // 2
 
-    # Split x into higher order (a) and lower order (b) parts based on half its digits
+    # Split x into higher order (a) and lower order (b) parts.
     a = x // (10**half_n)
     b = x % (10**half_n)
 
-    # Split y into higher order (c) and lower order (d) parts
+    # Split y into higher order (c) and lower order (d) parts.
     c = y // (10**half_n)
     d = y % (10**half_n)
 
-    # Compute p and q using grade-school addition
+    # Compute p and q using grade-school addition.
     p = a + b
     q = c + d
 
-    # Recursively compute subproducts
+    # Recursively compute subproducts.
     ac = karatsuba(a, c)
     bd = karatsuba(b, d)
     pq = karatsuba(p, q)
 
-    # Compute a.d + b.c using grade-school addition
+    # Compute a.d + b.c using grade-school addition.
     # (a + b).(c + d) - a.c - b.d = a.d + b.c
     # We already have (a + b).(c + d), a.c and b.d, so we calculate a.d + b.c
     adbc = pq - ac - bd 
@@ -80,7 +80,7 @@ def karatsuba(x: int, y: int) -> int:
 
 
 if __name__ == "__main__":
-    # Verify the algorithm with a simple test case
+    # Verify the algorithm with a simple test case.
     assert karatsuba(0, 5) == 0
     assert karatsuba(99, 99) == 9801
     print("All tests passed!")
