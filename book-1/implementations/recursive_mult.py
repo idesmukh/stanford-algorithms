@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 #
-"""Implements the recursive integer multiplication algorithm.
+"""Implement the recursive integer multiplication algorithm.
 
 Reference:
 Roughgarden, T. (2017). Algorithms illuminated: Part 1: The Basics.
@@ -13,7 +13,7 @@ import math
 
 
 def count_digits(number: int) -> int:
-    """ Returns the number of decimal digits in an integer.
+    """ Return the number of decimal digits in an integer.
 
     Args:
         number: Integer whose digits are to be counted.
@@ -25,7 +25,7 @@ def count_digits(number: int) -> int:
     if number == 0:
         return 1
 
-    # Get absolute value to support negative integers.
+    # Convert to absolute value to support negative integers.
     abs_number = abs(number)
 
     # Calculate base-10 logarithm. 
