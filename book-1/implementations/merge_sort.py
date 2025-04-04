@@ -11,14 +11,22 @@ Soundlikeyourself Publishing, LLC.
 
 
 def merge_sort(a: list) -> list:
+    """Sort a list from smallest to largest integer using merge sort algorithm.
+
+    Args:
+        a: List of integers.
+
+    Returns:
+        list: New list of integers sorted from smallest to largest.
+    """
 
     # Define base case.
-    # If list length is 0 or 1, it is already sorted.
+    # If list length is 0 or 1, it is already sorted so return it as it is.
     if len(a) <= 1:
         return a
 
     # Define recursive case.
-    # Divide the list into two halves.
+    # Divide list 'a' into two halves.
     middle_index = len(a) // 2
     a_left = a[:middle_index]
     a_right = a[middle_index:]
@@ -30,22 +38,33 @@ def merge_sort(a: list) -> list:
 
 
 def merge(c: list, d: list) -> list:
+    """Merge two sorted lists.
+
+    Args:
+        c: First sorted list of integers.
+        d: Second sorted list of integers.
+
+    Returns:
+        list: New list containing 'c' and 'd' sorted from smallest to largest.
+    """
+
     # Initialize output list.
     b = []
 
-    # Initialise pointers for c and d.
+    # Initialise pointers for 'c' and 'd'.
     i = 0
     j = 0
 
+    # Fill output list with sorted elements from 'c' and 'd'.
     while i < len(c) and j < len(d):
         if c[i] < d[j]:
-            b.append(c[i]) # Populate output list.
-            i += 1 # Increment i.
+            b.append(c[i])
+            i += 1
         else: # d[j] < c[i]
             b.append(d[j])
             j += 1
 
-    # Append any leftover elements from c or d.
+    # Append any leftover elements from 'c' or 'd'.
     if i != len(c):
         b.extend(c[i:])
     if j != len(d):
