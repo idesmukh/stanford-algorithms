@@ -24,10 +24,10 @@ This repository contains my problem set and assignment solutions, along with alg
 ## Book 1: Algorithms Illuminated Part 1: The Basics
 
 ### Implementations
-- [ ] Integer Multiplication
-- [ ] Recursive Integer Multiplication
-- [ ] Karatsuba Multiplication
-
+- [x] Integer Multiplication
+- [x] Recursive Integer Multiplication
+- [x] Karatsuba Multiplication
+- [x] Merge Sort
 ### Problems
 - [ ] Problem 1.1
 - [ ] Problem 1.2
