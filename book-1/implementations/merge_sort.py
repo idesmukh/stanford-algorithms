@@ -9,8 +9,6 @@ Roughgarden, T. (2017). Algorithms illuminated: Part 1: The Basics.
 Soundlikeyourself Publishing, LLC.
 """
 
-import math
-
 
 def merge_sort(a: list) -> list:
 
