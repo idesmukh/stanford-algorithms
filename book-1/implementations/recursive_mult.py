@@ -84,6 +84,7 @@ def rec_int_mult(x: int, y: int) -> int:
 
     return term_1 + term_2 + term_3
 
+
 if __name__ == "__main__":
     # Verify the algorithm with a simple test case.
     assert rec_int_mult(0, 5) == 0
