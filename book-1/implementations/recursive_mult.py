@@ -37,6 +37,7 @@ def count_digits(number: int) -> int:
     #   math.floor(2.0) + 1 = 3. 
     return math.floor(log_number) + 1
 
+
 def rec_int_mult(x: int, y: int) -> int:
     """Multiply two n-digit positive integers recursively.
 
