@@ -31,6 +31,6 @@ def list_search(a: list, t: int) -> bool:
 
 if __name__ == "__main__":
     # Verify the algorithm with a simple test case.
-    assert list_search([2,4,3,5],5) == True
-    assert list_search([1,4,2], 8) == False
+    assert list_search([2, 4, 3, 5], 5) == True
+    assert list_search([1, 4, 2], 8) == False
     print("All tests passed!")
