@@ -28,6 +28,10 @@ This repository contains my problem set and assignment solutions, along with alg
 - [x] Recursive Integer Multiplication
 - [x] Karatsuba Multiplication
 - [x] Merge Sort
+- [x] Searching One Array
+- [x] Searching Two Arrays
+- [x] Checking for a Common Element
+- [x] Checking for Duplicates
 ### Problems
 - [ ] Problem 1.1
 - [ ] Problem 1.2
