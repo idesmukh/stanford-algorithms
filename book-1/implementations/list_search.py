@@ -11,22 +11,22 @@ Soundlikeyourself Publishing, LLC.
 
 
 def list_search(a: list, t: int) -> bool:
-	"""Search list for an integer using searching one array algorithm.
+    """Search list for an integer using searching one array algorithm.
 
-	Args:
-		a: List to search in.
-		t: Integer to search for.
+    Args:
+        a: List to search in.
+        t: Integer to search for.
 
-	Returns:
-		bool: True, if target is found, otherwise False.
-	"""
+    Returns:
+        bool: True, if target is found, otherwise False.
+    """
 
-	# Iterate across 'a' to search for 't'.
-	for i in a:
-		if i == t:
-			return True
+    # Iterate across 'a' to search for 't'.
+    for i in a:
+        if i == t:
+            return True
 
-	return False
+    return False
 
 
 if __name__ == "__main__":
